@@ -13,13 +13,13 @@ Doporučujeme otevřít projekt z&nbsp;repozitáře:
 1. Otevři IntelliJ IDEA (případně zavři otevřený projekt pomocí _File &rarr; Close_).
 2. Zvol _Get from VCS_:  
     ![Při otevření IDEI na úvodní obrazovce zvol "Get from VCS"...](img/git_open-repo_02_get-from-vcs.png)
-3. Zadej adresu tohoto repozitáře:<br />`git@github.com:ENGETO-Java-Akademie-2022-07/du-lekce-03.git`<br />
+3. Zadej adresu tohoto repozitáře:<br />`git@github.com:ENGETO-Java-Akademie/du-lekce-03.git`<br />
     Adresu repozitáře najdeš také na GitHubu:  
     ![Adresu repozitáře najdeš také na GitHubu:](img/git_open-repo_01_get-link.png)  
 4. Naklonuj repozitář:  
     Do kolonky "Directory" zapiš cestu k&nbsp;adresáři, kde máš své projekty.  
     _(Obvykle by ji IntelliJ mělo vyplnit samo podle předchozího nastavení.)_  
-    ![Naklonuj repozitář](img/git_open-repo_03_clone-repo.png)
+    ![Naklonuj repozitář](img/git-idea_02-clone_030-address.png)
 5. Abys mohl(a) později projekt publikovat, musíš nastavit, že projektu důvěřuješ:  
    ![Zvol _Důvěřovat projektu_ (_Trust project_)](img/git-idea_02-clone_040-trust.png)
 5. Najdi si třídu `Main`. IDEA tě požádá o nastavení SDK:  

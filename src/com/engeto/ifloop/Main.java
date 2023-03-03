@@ -93,7 +93,6 @@ public class Main {
      */
     public static void printAllIntegersFromList(List<Integer> list) {
         int input = Support.safeReadInt();
-        new ArrayList<>();
         while (input >= 0) {
             System.out.println("You entered: " + input);
             list.add(input);
@@ -103,11 +102,8 @@ public class Main {
                 System.out.println("You entered negative");
         }
         for (Integer integer:list)
-            System.out.println(input);
+            System.out.println(integer);
     }
-
-
-
 
     /**
      * Sečte hodnoty z listu a vrátí výsledek jako návratovou hodnotu.
@@ -116,7 +112,6 @@ public class Main {
      */
     public static Integer sumAllIntegersFromList(List<Integer> list) {
         int input = Support.safeReadInt();
-        new ArrayList<>();
         int sum = 0;
         while (input >= 0) {
             list.add(input);
@@ -125,11 +120,10 @@ public class Main {
             input = Support.safeReadInt();
         }
             if (input < 0) {
-                System.out.print("the sum is: ");
+                System.out.println("You entered negative.");
             }
-
              for (Integer integer: list) {
-                 sum += input;
+                 sum += integer;
              }
              return sum;
     }
@@ -142,6 +136,22 @@ public class Main {
      * @param limit Limit - vypsána budou pouze čísla z listu, která jsou menší než limit
      */
     public static void printIntegersUnderLimit(List<Integer> list, int limit) {
+        int input = Support.safeReadInt();
+        int sum = 0;
+        limit = 5;
+        while (input >= 0) {
+            list.add(input);
+            System.out.println("You entered: " + input);
+            System.out.println("Enter another integer:");
+            input = Support.safeReadInt();
+        }
+        if (input < 0) {
+            System.out.println("You entered negative.");
+        }
+        for (Integer integer: list) {
+            if(integer<limit)
+                System.out.println("Numbers below "+limit+" is "+integer);
+        }
     }
 
     /**
@@ -156,6 +166,22 @@ public class Main {
      * @param list Seznam čísel, která se mají vypsat.
      */
     public static void printIntegersWithReplace(List<Integer> list) {
+        int input = Support.safeReadInt();
+        while (input >= 0) {
+            list.add(input);
+            System.out.println("You entered: " + input);
+            System.out.println("Enter another integer:");
+            input = Support.safeReadInt();
+        }
+        if (input < 0) {
+            System.out.println("You entered negative.");
+        }
+        for (Integer integer : list) {
+            if(integer==1) System.out.println("one");
+            else if (integer==2) System.out.println("two");
+            else if (integer==3) System.out.println("three");
+            else System.out.println(integer);
+        }
     }
     //endregion
 
